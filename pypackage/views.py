@@ -12,6 +12,7 @@ class PackageView(ListView):
     model = Package
 
 
-class VersionView(ListView):
-    model = Version
+class VersionView(DetailView):
+    model = Package
 
+    

@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Links for Django</title>
+  </head>
+
+  <body>
+  <h1>Links for {{ object.name }}</h1>
+    {% for obj in object.versions.all %}
+        <a href="{{ obj.get_absolute_url }}">{{ obj.file_name }}</a>
+        <br>
+    {% endfor %}
+  </body>
+
