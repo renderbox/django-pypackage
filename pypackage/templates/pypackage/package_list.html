@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block head_title %}Simple index{% endblock %}
+
+{% block content %}
+
+{% for obj in object_list %}
+    <a href="/simple/{{ obj.slug }}/">{{ obj.name }}</a>
+{% endfor %}
+
+{% endblock %}

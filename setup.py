@@ -37,12 +37,13 @@ setup(
     python_requires=">=3.6",
     install_requires=[
         "Django>=2.1,<2.2",
+        "django-autoslug==1.9.4",
         ],
     extras_require={
         'dev': [],
         'test': [],
         'prod': [],
-        'build': ['wheel'],
+        'build': ['wheel', 'twine'],
         'docs': [
             'coverage==4.4.1',
             'Sphinx==1.6.4'],
